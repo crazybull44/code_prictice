@@ -7,3 +7,19 @@ df['a'].tolist()
 # To drop duplicates you can do one of the following:
 df['a'].drop_duplicates().values.tolist()
 list(set(df['a']))
+
+# while循环连乘求阶乘
+n = 1
+res = 1
+num = int(input("Enter a num:"))
+while n <= num:
+    res = res * n
+    n += 1
+print(res)
+
+# for循环连乘求阶乘
+num = int(input("Enter a num:"))
+res = 1
+for i in range(1,num+1):
+    res = res * i
+print(res)
